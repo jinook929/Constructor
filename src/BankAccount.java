@@ -14,16 +14,16 @@ public class BankAccount {
     }
 
     public void deposit (int deposit) {
-        this.balance = this.balance + deposit;
-        System.out.println("Current balance = " + this.balance);
+        this.balance += deposit;
+        System.out.println(deposit + " deposited. Your current balance is " + this.balance);
     }
 
     public void withdrawal (int withdrawal) {
         if(this.balance < withdrawal) {
-            System.out.println("Not enough balance");
+            System.out.println("Not enough balance for withdrawal of " + withdrawal + ". Your current balance is " + this.balance + ".");
         } else {
-            this.balance = this.balance - withdrawal;
-            System.out.println("Current balance = " + this.balance);
+            this.balance -= withdrawal;
+            System.out.println(withdrawal + " withdrawn. Your current balance is " + this.balance);
         }
     }
 
