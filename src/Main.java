@@ -13,5 +13,13 @@ public class Main {
         jinookAccount.getBalance();
         jinookAccount.withdrawal(130000);
         jinookAccount.getBalance();
+
+        BankAccount tomAccount = new BankAccount("Tom", "tom@abc.com", "333-333-3333");
+        System.out.println(tomAccount.getCustomerName());
+        System.out.println(tomAccount.getAccountNumber());
+        tomAccount.setAccountNumber("123456");
+        tomAccount.setBalance(10000);
+        System.out.println(tomAccount.getAccountNumber());
+
     }
 }

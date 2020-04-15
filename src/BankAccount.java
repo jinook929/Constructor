@@ -18,6 +18,12 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void deposit (int deposit) {
         this.balance += deposit;
         System.out.println(deposit + " deposited. Your current balance is " + this.balance);
